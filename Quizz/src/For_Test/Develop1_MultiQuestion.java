@@ -4,8 +4,8 @@
 
 /*			*****************************
  * 			*							*
- * 			*		HotFix5で			*
- * 			*　	  新しく作ったクラス    *
+ * 			*		HotFix5からの		*
+ * 			*　	   変更点はなし		    *
  * 			*							*
  * 			*****************************
  */
@@ -17,11 +17,11 @@ package For_Test;
 import java.io.IOException;
 import Four_Choice.Four_Choice_DTO;
 
-public class HotFix5_MultiQuestion {
+public class Develop1_MultiQuestion {
 
 	
 	//四択問題を引数問　出題するメソッド
-	public void FourChoiceMultiQ(int numOfQue) throws IOException{
+	public void FourChoiceMultiQ(int numOfQue) throws IOException, InterruptedException {
 
 		//重複なしで、１～１０のなかの整数の乱数を出題数分受け取る処理。
 		//１～１０をシャッフルして前から出題数分受け取る
@@ -40,7 +40,7 @@ public class HotFix5_MultiQuestion {
 		}
 		
 		for(int i=0 ; i<numOfQue ; i++) {
-			HotFix5_BusinessLogic bl = new HotFix5_BusinessLogic();
+			Develop1_BusinessLogic bl = new Develop1_BusinessLogic();
 		
 			//問題を取り込む
 			Four_Choice_DTO dto = new Four_Choice_DTO();

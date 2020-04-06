@@ -86,7 +86,7 @@ public class Four_Choice_DAO {
 			
 			if(rs != null) {
 				try {
-					ps.close();
+					rs.close();
 				} catch (SQLException e) {
 					e.printStackTrace();
 				}
